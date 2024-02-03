@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+}
+
+.nav .link ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav .link ul a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: 600;
+    transition: all 2000ms ease-in-out;
+}
+
+ul a .active {
+    color: #f4637b;
+}
+
+.nav .link ul a:hover {
+    color: #f4637b;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 70px;
+
+}
+
+.main .men {
+    width: 400px;
+    transition: all 2000ms ease;
+    cursor: pointer;
+}
+
+.main .men:hover{
+    transform: scale(1.3);
+}
+
+.main .main-detil {
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.main .main-detil h1 {
+    font-size: 50px;
+
+}
+
+.main .main-detil h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main .btn button {
+    padding: 8px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid #2a2a2a;
+    margin-right: 1rem;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main .btn .btn-2 {
+    padding: 8px 30px;
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 2000ms ease-in-out;
+
+}
+
+.main .btn .btn-2:hover {
+    background: #f4637b;
+    transform: scale(1.1);
+}
+
+.social i {
+    color: #2a2a2a;
+    font-size: 40px;
+    margin: 0px 14px;
+    transition: all 2000ms ease-in-out;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #f4637b;
+}
+
+.sub-btn a{
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.aboutme{
+    align-items: center;
+}
+.aboutme h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.aboutme p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.header{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.skills {
+    align-content: center;
+}
+.skills-container{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:7rem;
+    display: flex;
+    transition: transform 0.3s ease-in-out;   
+}
+.skills-box .skills-container{
+    flex:1 1 30rem;
+    padding: 3rem 2rem 5rem;
+    border-radius: 3rem;
+    text-align: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.skills-container .skills-box:hover{
+    border-color: #2a2a2a;
+    transform: scale(1.02);
+}
+
+.skills-box i{
+    font-size: 7rem;
+}
+.skills-box h3{
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.skills p{
+    text-align: center;
+}
+
+.certification {
+    background-color:transparent;
+    padding: 60px 0;
+}
+
+.certification h2 {
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.certification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 7rem;
+}
+
+.certification-box:hover {
+    transform: scale(1.02);
+}
+
+.certification-box h3 {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.certification-box h2 {
+    color: #555;
+    font-size: 17px;
+}
+
+.certification-container{
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+.certification-container .certification-box{
+    flex:1 1 30rem;
+    background:transparent;
+    padding:3rem 2rem 5rem;
+    border-radius: 3rem;
+    text-align:center;
+    border: 2px solid var(--second-bg-color);
+}
+
+.certification-container .certification-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+html{
+    scroll-behavior: smooth;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    text-align: center;
+  }
+
+  #contacts p{
+    text-align: center;
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+
+  
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+
+  .section_text_p1 {
+    text-align: center;
+    
+  }
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
